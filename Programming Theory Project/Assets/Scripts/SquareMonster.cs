@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SquareMonster : MonsterClass
 {
-    private float size = 2f;
-
     private void Start()
     {
-        newtransform = GetComponent<Transform>();
+        size = 1.2f;
+        speed = 6;
+        NewTransform();
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class SquareMonster : MonsterClass
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            newtransform.localScale *= size;
+            SizeMultiplier();
         }
     }
 }

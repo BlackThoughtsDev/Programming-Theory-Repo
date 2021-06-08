@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class TriangleMonster : MonsterClass
 {
-    private float size = 1.5f;
-
-
     private void Start()
     {
+        size = 1.5f;
+        speed = 9;
         NewTransform();
     }
 
@@ -23,7 +22,7 @@ public class TriangleMonster : MonsterClass
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            newtransform.localScale *= size;
+            SizeMultiplier();
         }
     }
 }

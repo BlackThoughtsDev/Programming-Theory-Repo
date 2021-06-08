@@ -4,14 +4,17 @@ using UnityEngine;
 
 public abstract class MonsterClass : MonoBehaviour
 {
-    [SerializeField] float speed = 5;
+
     private float horizontalInput;
     private float verticalInput;
+
+    protected float speed;
+    protected float size;
     protected Transform newtransform;
 
     protected abstract void DoAThing();
     
-    protected void Walk()
+    protected virtual void Walk()
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
         transform.Translate(Vector3.up * Time.deltaTime * speed * verticalInput);
@@ -26,5 +29,10 @@ public abstract class MonsterClass : MonoBehaviour
     protected void NewTransform()
     {
         newtransform = GetComponent<Transform>();
+    }
+
+    protected void SizeMultiplier()
+    {
+        newtransform.localScale *= size;
     }
 }

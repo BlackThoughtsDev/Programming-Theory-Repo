@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CircleMonster : MonsterClass
 {
-    private float size = 0.5f;
-
     private void Start()
     {
-        newtransform = GetComponent<Transform>();
+        size = 0.5f;
+        speed = 2;
+        NewTransform();
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class CircleMonster : MonsterClass
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            newtransform.localScale *= size;
+            SizeMultiplier();
         }
     }
 }
