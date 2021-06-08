@@ -4,17 +4,19 @@ using UnityEngine;
 
 public abstract class MonsterClass : MonoBehaviour
 {
-
+    // ENCAPSULATION
     private float horizontalInput;
     private float verticalInput;
 
-    [SerializeField] private float m_Size = 1.5f;
+    private float m_Size = 1.1f;
     public float Size
     {
         get { return m_Size; }
         set
         {
             m_Size = value;
+            if (newtransform.localScale.x > 1.5) m_Size = 0.9f;
+            else if (newtransform.localScale.x < 0.5) m_Size = 1.1f;
         }
     }
 
@@ -22,7 +24,6 @@ public abstract class MonsterClass : MonoBehaviour
     public float Speed
     {
         get { return m_Speed; }
-        set { m_Speed = value; }
     }
 
     protected Transform newtransform;
@@ -48,11 +49,8 @@ public abstract class MonsterClass : MonoBehaviour
 
     protected void SizeMultiplier()
     {
-        float xScale = newtransform.localScale.x;
-        if(xScale < 1.5f)
-        {
-            newtransform.localScale *= m_Size;
-        }
+        newtransform.localScale *= m_Size;
+        Size = m_Size;
     }
 
 }

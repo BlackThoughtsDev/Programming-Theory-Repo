@@ -91,72 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Triangle
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2172
-      width: 729
-      height: 608
-    spriteID: eefb1754c7c3dd54484e0af3b1bf5cd7
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -2461, y: 1327}
-  - name: Square
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1352
-      y: 2172
-      width: 546
-      height: 546
-    spriteID: 243cf80285360584c86553036b687478
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -211, y: 1311}
-  - name: Circle
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 741
-      y: 2172
-      width: 603
-      height: 603
-    spriteID: edba1f8f2f05b2e4f91ab7dfa32ba3d0
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 183, y: 1320}
   - name: "T\u0142o"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -179,6 +113,72 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  - name: Triangle
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 906
+      y: 2172
+      width: 898
+      height: 746
+    spriteID: 7efee40ba8a36fb47ad131e6f5a96f0d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1491, y: 1403}
+  - name: Square
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2172
+      width: 894
+      height: 773
+    spriteID: 8699600267b924c4097fcd00ea91c9d9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1416, y: 1417}
+  - name: Circle
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2953
+      width: 833
+      height: 820
+    spriteID: 35ed68fd53ea2504fae7ef7ec41cfbcf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -422, y: 2224}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -202,23 +202,23 @@ ScriptedImporter:
     spriteName: Triangle
     isGroup: 0
     parentIndex: -1
-    spriteID: eefb1754c7c3dd54484e0af3b1bf5cd7
-    layerID: 6
-    mosaicPosition: {x: 4, y: 2172}
+    spriteID: 7efee40ba8a36fb47ad131e6f5a96f0d
+    layerID: 16
+    mosaicPosition: {x: 906, y: 2172}
   - name: Square
     spriteName: Square
     isGroup: 0
     parentIndex: -1
-    spriteID: 243cf80285360584c86553036b687478
-    layerID: 4
-    mosaicPosition: {x: 1352, y: 2172}
+    spriteID: 8699600267b924c4097fcd00ea91c9d9
+    layerID: 14
+    mosaicPosition: {x: 4, y: 2172}
   - name: Circle
     spriteName: Circle
     isGroup: 0
     parentIndex: -1
-    spriteID: edba1f8f2f05b2e4f91ab7dfa32ba3d0
-    layerID: 2
-    mosaicPosition: {x: 741, y: 2172}
+    spriteID: 35ed68fd53ea2504fae7ef7ec41cfbcf
+    layerID: 11
+    mosaicPosition: {x: 4, y: 2953}
   - name: "T\u0142o"
     spriteName: "T\u0142o"
     isGroup: 0
