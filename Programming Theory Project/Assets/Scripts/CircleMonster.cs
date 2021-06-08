@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class CircleMonster : MonsterClass
 {
     private void Start()
     {
-        size = 0.5f;
-        speed = 2;
         NewTransform();
     }
 
+    // ABSTRACTION
     void Update()
     {
         GetAxis();
@@ -18,6 +18,7 @@ public class CircleMonster : MonsterClass
         DoAThing();
     }
 
+    // POLYMORPHISM
     protected override void DoAThing()
     {
         if (Input.GetKeyDown(KeyCode.E))

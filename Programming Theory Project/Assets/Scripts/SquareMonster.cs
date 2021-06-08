@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class SquareMonster : MonsterClass
 {
     private void Start()
     {
-        size = 1.2f;
-        speed = 6;
         NewTransform();
     }
 
+    // ABSTRACTION
     void Update()
     {
         GetAxis();
@@ -18,6 +18,7 @@ public class SquareMonster : MonsterClass
         DoAThing();
     }
 
+    // POLYMORPHISM
     protected override void DoAThing()
     {
         if (Input.GetKeyDown(KeyCode.E))
